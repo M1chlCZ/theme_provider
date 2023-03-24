@@ -51,14 +51,12 @@ class HomePage extends StatelessWidget {
       id: customAppThemeId,
       description: "Custom Color Scheme",
       data: ThemeData(
-        accentColor: Colors.yellow,
         primaryColor: Colors.red,
         scaffoldBackgroundColor: Colors.yellow[200],
-        buttonColor: Colors.amber,
         dialogBackgroundColor: Colors.yellow,
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(primary: Colors.red),
-        ),
+        ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.yellow),
       ),
     );
   }
